@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Generator</title>
+</head>
+<body>
+   
+    <style>
+
+        :root {
+          --bgcolor: red;
+        
+        }
+            h1, h2, h3{
+                text-align: center;
+                color: var(--bgcolor);
+            }
+            input#bkgurl {
+            width: 100%;
+            padding: 10px;
+            border-radius: 7px;
+            border: none;
+            outline: none;
+            margin: 10px;
+            border-bottom: 2px solid var(--bgcolor);
+            background: none;
+        }
+        input#bkgurl:active{
+        
+        }
+        button#bklgenerate {
+            width: 200px;
+            height: 35px;
+            border: 1px solid var(--bgcolor);
+            outline: none;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .divoutbklresult{
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+        
+        
+        textarea#outbklresult {
+            width: 100%;
+            height: auto;
+            position: relative;
+            border-radius: 10px;
+            margin-top: 34px;
+            outline: none;
+            padding: 10px;
+            border:2px solid var(--bgcolor);
+            background: none;
+        }
+        
+        .divoutbklresult .copyoutput{
+            position: absolute;
+            width: 80px;
+            height: 30px;
+            padding: 5px;
+            border-radius: 8px;
+            background: var(--bgcolor);
+            right: 0px;
+            top: 0px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+        }
+        
+        
+        
+        </style>
+            
+            <h1>Credit Card Generator</h1>
+
+      
+<h2>After giving the link to your website below, click on Generate.</h2>
+        <input id="bkgurl" value="https://www.yourwebsite.com" type="text" placeholder="Your URL "> <button id="bklgenerate">Generate</button> <br>
+        <div style="display: none;" class="tabledata"> </div>
+        <div  class="tabledata2"> </div>
+        <h3>Wait a while after clicking Generate. Since the code of 5000+ links will be executed, it will take some time.</h3>
+        <h3>If do not close the page that automatically open every backlink page With a break of 3 seconds.</h3>
+        <h2>Copy all Code from the box below and make a webpage in online </h2>
+        
+        <div class="divoutbklresult">
+            <button class="copyoutput">Copy code </button>
+            <textarea id="outbklresult" width="100%" height="auto" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js"></script>
+
+     <script src="https://www.mrlaboratory.info/feeds/posts/summary?orderby=published&max-results=1&alt=json-in-script&callback=mycallback"></script> 
+</body>
+</html>
